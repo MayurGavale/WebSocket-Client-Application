@@ -1,0 +1,27 @@
+executable("websocket_client") {
+  # ... (previous content remains the same)
+}
+
+executable("websocket_client_test") {
+  sources = [
+    "test/websocket_client_test.cpp",
+    "src/websocket_client.cpp",
+  ]
+
+  include_dirs = [
+    "include",
+    "//third_party/websocketpp",
+  ]
+
+  deps = [
+    "//third_party/boost",
+  ]
+
+  cflags = [ "-std=c++14" ]
+
+  if (is_debug) {
+    cflags += [ "-g", "-O0" ]
+  } else {
+    cflags += [ "-O2" ]
+  }
+}

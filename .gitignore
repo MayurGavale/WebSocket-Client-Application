@@ -1,0 +1,94 @@
+# Build output directories
+/out/
+/build/
+
+.VirtualBox/
+.android/
+.app-store/
+.bash_history
+...
+# GN generated files
+/.gn
+*.ninja
+.ninja_deps
+.ninja_log
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependency directories
+/third_party/
+/external/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Core dumps
+core
+
+# CMake generated files (if you use CMake for any part of your project)
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Boost library files (if you're building Boost locally)
+/boost_*/
+
+# WebSocket++ library files (if you're including it as a submodule)
+/websocketpp/
+
+# Custom ignore patterns for your specific project
+# Add any additional patterns here
